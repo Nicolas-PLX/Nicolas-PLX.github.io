@@ -1,58 +1,89 @@
+/* Style général */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f5;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    background: linear-gradient(135deg, #7f00ff, #1fb6ff);
+    height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     color: white;
-    padding: 10px 0;
     text-align: center;
+}
+
+.banner-text {
+    padding-top: 100px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2em;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.section {
-    padding: 20px;
-    margin: 20px 0;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-h1, h2 {
-    color: #333;
+/* Section principale */
+.content {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.project {
-    margin-bottom: 15px;
+h2 {
+    color: #7f00ff;
 }
 
 .profile-pic {
     width: 150px;
     border-radius: 50%;
+    display: block;
+    margin: 20px auto;
 }
 
+.project {
+    margin-bottom: 20px;
+}
+
+/* Footer (optionnel, si besoin de plus tard) */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    width: 100%;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
