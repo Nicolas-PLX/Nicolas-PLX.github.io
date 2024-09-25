@@ -74,6 +74,10 @@ html, body {
     font-size: 0.9em;
     display: inline-block; 
 }
+
+a{
+    color:#333;
+}
 a:visited {
     color: #333;
 }
@@ -277,7 +281,3 @@ body {
 }
 
 
-.branch h3 {
-    display: inline-block;
-    margin: 0;
-    co
