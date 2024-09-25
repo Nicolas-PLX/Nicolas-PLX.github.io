@@ -1,11 +1,14 @@
 /* Style général */
-body {
-    font-family: 'Arial', sans-serif;
+html, body {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: #f0f0f5;
     color: #333;
 }
+
 
 header {
     position: relative;
@@ -14,15 +17,25 @@ header {
 
 .banner {
     background: linear-gradient(135deg, #7f00ff, #1fb6ff);
-    height: 300px;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    height: 200px; /* Petite taille de bannière */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Ajustement pour que la forme soit cohérente */
     color: white;
     text-align: center;
+    position: relative; /* S'assure que la bannière reste en haut */
 }
 
 .banner-text {
-    padding-top: 100px;
+    padding-top: 40px; /* Ajuster l'espacement en fonction de la nouvelle hauteur */
 }
+
+body {
+    overflow-x: hidden; /* Empêche l'overflow horizontal */
+}
+
+html, body {
+    height: auto; /* S'assure que la hauteur ne pose pas de problème avec le scroll */
+}
+
 
 .banner h1 {
     font-size: 3em;
@@ -33,6 +46,13 @@ header {
     font-size: 1.2em;
 }
 
+a:visited {
+    color: #333;
+}
+
+a:hover{
+    text-decoration: underline;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -55,35 +75,173 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.language-switcher img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 /* Section principale */
 .content {
     padding: 30px;
     max-width: 900px;
     margin: auto;
+    flex: 1;
 }
 
 h2 {
     color: #7f00ff;
 }
 
-.profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
-
 .project {
     margin-bottom: 20px;
 }
 
-/* Footer (optionnel, si besoin de plus tard) */
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-right: 5px;
+    color: white;
+}
+
+.tag-datascience {
+    background-color: #1fb6ff;
+}
+
+.tag-python {
+    background-color: #ff7f50;
+}
+
+.tag-web {
+    background-color: #32cd32;
+}
+
+.tag-mobile {
+    background-color: green;
+}
+
+.tag-java {
+    background-color: purple;
+}
+
+.tag-kotlin {
+    background-color: purple;
+}
+
+.tag-rust{
+    background-color: black;
+}
+
+.tag-Cpp{
+    background-color: blue;
+}
+
+.tag-C{
+    background-color: lightskyblue;
+}
+
+.tag-XSLT{
+    background-color: lightcoral;
+}
+
+.tag-archive{
+    background-color: orange;
+}
+
+.tag-enCours{
+    background-color: greenyellow;
+}
+
+
+
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 0;
+    margin-top: auto;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Correction pour la disposition */
+html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+body {
+    flex: 1;
+}
+
+/* Style pour l'arbre des projets */
+.tree {
+    padding-left: 20px;
+    position: relative;
+}
+
+.tree::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #333; /* Couleur de la ligne verticale */
+}
+
+.branch {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.branch::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 30px;
+    height: 2px;
+    background-color: #333; /* Couleur de la ligne horizontale */
+}
+
+.branch::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Couleur du point */
+    border-radius: 50%; /* Rend le point circulaire */
+}
+
+
+.branch h3 {
+    display: inline-block;
+    margin: 0;
+    co
