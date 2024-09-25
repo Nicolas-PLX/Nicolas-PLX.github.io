@@ -16,15 +16,30 @@ header {
 }
 
 /* Mise en page en colonnes */
+/* Mise en page en colonnes */
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;  /* Permet le wrapping pour que les éléments ne se chevauchent pas */
+    justify-content: space-between; /* Espace les colonnes */
+    align-items: flex-start;  /* Aligne les éléments au début de chaque colonne */
+    gap: 20px; /* Espace entre les colonnes */
 }
 
 .left-column, .right-column {
-    width: 48%;
+    width: 48%; /* Assure que chaque colonne prend 48% de l'espace disponible */
     padding: 20px;
+    box-sizing: border-box; /* Inclus le padding dans la largeur totale */
 }
+
+/* Supprime tout chevauchement inattendu */
+.left-column {
+    float: left;
+}
+
+.right-column {
+    float: right;
+}
+
 
 .banner {
     background: linear-gradient(135deg, #7f00ff, #1fb6ff);
