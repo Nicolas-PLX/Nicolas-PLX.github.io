@@ -121,6 +121,10 @@ h2 {
     background-color: #1fb6ff;
 }
 
+.tag-Jupyter-Notebook {
+    background-color: orangered;
+}
+
 .tag-python {
     background-color: #ff7f50;
 }
