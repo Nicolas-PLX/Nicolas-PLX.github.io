@@ -29,7 +29,7 @@ header {
 .banner {
     background: linear-gradient(135deg, #7f00ff, #1fb6ff);
     height: 200px; /* Petite taille de bannière */
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Ajustement pour que la forme soit cohérente */
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);  */
     color: white;
     text-align: center;
     position: relative; /* S'assure que la bannière reste en haut */
@@ -130,6 +130,14 @@ nav ul li a:hover {
 
 h2 {
     color: #7f00ff;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+.form {
+    text-decoration: underline;
 }
 
 .project {
