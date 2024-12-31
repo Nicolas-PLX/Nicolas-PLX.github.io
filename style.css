@@ -196,16 +196,16 @@ h3 {
     background-color: green;
 }
 
-.tag-Neo4j{
+.tag-neo4j{
     background-color: blueviolet;
 }
 
-.tag-RDF{
+.tag-rdf{
     background-color: red;
 }
 
 .tag-heptagon{
-    background-color: #333;
+    background-color: black;
 }
 
 .tag-rust{
