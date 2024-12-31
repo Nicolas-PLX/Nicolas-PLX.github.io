@@ -169,6 +169,9 @@ h3 {
     background-color: #ff7f50;
 }
 
+.tag-ML {
+    background-color: blue;
+}
 .tag-web {
     background-color: #32cd32;
 }
@@ -183,6 +186,26 @@ h3 {
 
 .tag-kotlin {
     background-color: purple;
+}
+
+.tag-Jeu{
+    background-color: rgb(255, 43, 43);
+}
+
+.tag-Ecours{
+    background-color: green;
+}
+
+.tag-tag-Neo4j{
+    background-color: blueviolet;
+}
+
+.tag-tag-RDF{
+    background-color: red;
+}
+
+.tag-tag-heptagon{
+    background-color: #333;
 }
 
 .tag-rust{
